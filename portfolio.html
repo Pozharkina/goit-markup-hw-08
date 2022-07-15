@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <!-- <header class="header">
+      <div class="conteiner">
+        <nav class="nav">
+          <a href="./index.html" class="logo header-logo"
+            ><span class="logo__web">Web</span><span class="logo__studio">Studio</span></a
+          >
+          <ul class="navigation">
+            <li class="navigation__list">
+              <a href="./index.html" class="navigation__item">Студия</a>
+            </li>
+            <li class="navigation__list">
+              <a href="./portfolio.html" class="navigation__item navigation__item--current"
+                >Портфолио</a
+              >
+            </li>
+            <li class="navigation__list">
+              <a href="" class="navigation__item">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="contact">
+          <li class="contact__item">
+            <a href="mailto:info@devstudio.com" class="contact__link link"
+              ><svg class="contact__icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use></svg
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="contact__item">
+            <a href="tel:+380991111111" class="contact__link link"
+              ><svg class="contact__icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-cell"></use></svg
+              >+38 099 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header> -->
+
+    <main class="filter">
+      <section class="section">
+        <div class="conteiner">
+          <ul class="filter-list">
+            <li class="filter-btn"><button type="button" class="filter-item">Все</button></li>
+            <li class="filter-btn"><button type="button" class="filter-item">Веб-сайты</button></li>
+            <li class="filter-btn">
+              <button type="button" class="filter-item">Приложения</button>
+            </li>
+            <li class="filter-btn"><button type="button" class="filter-item">Дизайн</button></li>
+            <li class="filter-btn"><button type="button" class="filter-item">Маркетинг</button></li>
+          </ul>
+
+          <!-- скрытый заголовок -->
+          <h1 class="hidden">Наши работы</h1>
+          <ul class="hero">
+            <li class="hero-item">
+              <a class="hero-link" href=""
+                ><div class="hero-coverbox">
+                  <img
+                    class="card-image"
+                    src="./images/project-1.jpg"
+                    alt="Открытая страница на ноутбуке"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="hero-covertext">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="hero-border">
+                  <h2 class="hero-title">Технокряк</h2>
+                  <p class="hero-text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="hero-item">
+              <a class="hero-link" href=""
+                ><div class="hero-coverbox">
+                  <img
+                    class="card-image"
+                    src="./images/project-2.jpg"
+                    alt="Два баскетболиста"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="hero-covertext">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="hero-border">
+                  <h2 lang="en" class="hero-title">Постер New Orlean vs Golden Star</h2>
+                  <p class="hero-text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="hero-item">
+              <a class="hero-link" href=""
+                ><div class="hero-coverbox">
+                  <img
+                    class="card-image"
+                    src="./images/project-3.jpg"
+                    alt="Ресторан Seafood"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="hero-covertext">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="hero-border">
+                  <h2 lang="en" class="hero-title">Ресторан Seafood</h2>
+                  <p class="hero-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="hero-item">
+              <a class="hero-link" href=""
+                ><div class="hero-coverbox">
+                  <img
+                    class="card-image"
+                    src="./images/project-4.jpg"
+                    alt="Наушники"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="hero-covertext">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="hero-border">
+                  <h2 lang="en" class="hero-title">Проект Prime</h2>
+                  <p class="hero-text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="hero-item">
+              <a class="hero-link" href=""
+                ><div class="hero-coverbox">
+                  <img
+                    class="card-image"
+                    src="./images/project-5.jpg"
+                    alt="Две коробки"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="hero-covertext">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="hero-border">
+                  <h2 lang="en" class="hero-title">Проект Boxes</h2>
+                  <p class="hero-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="hero-item">
+              <a class="hero-link" href=""
+                ><div class="hero-coverbox">
+                  <img
+                    class="card-image"
+                    src="./images/project-6.jpg"
+                    alt="Монитор компьютера"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="hero-covertext">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="hero-border">
+                  <h2 lang="en" class="hero-title">Inspiration has no Borders</h2>
+                  <p class="hero-text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="hero-item">
+              <a class="hero-link" href=""
+                ><div class="hero-coverbox">
+                  <img
+                    class="card-image"
+                    src="./images/project-7.jpg"
+                    alt="Открытая книга"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="hero-covertext">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="hero-border">
+                  <h2 lang="en" class="hero-title">Издание Limited Edition</h2>
+                  <p class="hero-text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="hero-item">
+              <a class="hero-link" href=""
+                ><div class="hero-coverbox">
+                  <img
+                    class="card-image"
+                    src="./images/project-8.jpg"
+                    alt="Ярлык"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="hero-covertext">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="hero-border">
+                  <h2 lang="en" class="hero-title">Проект LAB</h2>
+                  <p class="hero-text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="hero-item">
+              <a class="hero-link" href=""
+                ><div class="hero-coverbox">
+                  <img
+                    class="card-image"
+                    src="./images/project-9.jpg"
+                    alt="Работа за ноутбуком"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="hero-covertext">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="hero-border">
+                  <h2 lang="en" class="hero-title">Growing Business</h2>
+                  <p class="hero-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- <footer class="footer">
+      <div class="conteiner">
+        <div>
+          <a href="index.html" class="logo footer-logo"
+            ><span class="logo__web">Web</span><span class="logo__studio studio">Studio</span></a
+          >
+          <address class="footer__nav">
+            <ul class="info__list">
+              <li class="info__item info">
+                <a href="" class="address__text">г. Киев, пр-т Леси Украинки, 26</a>
+              </li>
+              <li class="info__item info">
+                <a href="mailto:info@example.com" class="contact__link cont">info@example.com</a>
+              </li>
+              <li class="info__item">
+                <a href="tel:+380991111111" class="contact__link cont">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="social">
+          <h5 class="social__title">Присоединяйтесь</h5>
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="" class="soc-list__link footer-soc">
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram-fr"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="soc-list__link footer-soc">
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter-fr"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="soc-list__link footer-soc">
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook-fr"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="soc-list__link footer-soc">
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin-fr"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form class="form">
+          <label class="form__label" for="email-footer">Подпишитесь на рассылку</label>
+          <div class="footer__wrap">
+            <input
+              type="email"
+              class="footer__input"
+              name="email-footer"
+              id="email-footer"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="form__btn btn">
+              Подписаться
+              <svg class="form__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twit"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </footer> -->
+  </body>
+</html>

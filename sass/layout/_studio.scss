@@ -1,0 +1,64 @@
+.studio__section {
+  max-width: 100%;
+  height: 400px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background: #2f303a;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/img-overlay-mobile.jpg);
+  @include retina {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/img-overlay-mobile-2x.jpg);
+  }
+
+  @include tablet {
+    max-width: 768px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/img-overlay-tablet.jpg);
+    @include retina {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/img-overlay-tablet-2x.jpg);
+    }
+  }
+
+  @include desktop {
+    max-width: 1200px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/img-overlay.jpg);
+    @include retina {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/img-overlay-2x.jpg);
+    }
+  }
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.studio__title {
+  max-width: 360px;
+  @include font(900, 1.62, 26px, 0.06em);
+  text-transform: uppercase;
+  color: var(--second-text-color);
+  padding-top: 0;
+  text-align: center;
+  margin: 0px auto 30px auto;
+
+  @include desktop {
+    max-width: 696px;
+    @include font(null, 1.36, 44px, null);
+  }
+}
+
+.studio__button {
+  justify-content: center;
+  margin: auto;
+  min-width: 200px;
+  height: 50px;
+}

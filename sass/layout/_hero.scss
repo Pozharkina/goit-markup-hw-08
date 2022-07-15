@@ -1,0 +1,79 @@
+.hidden {
+  display: none;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.hero-title {
+  @include font(700, 2, 18px, 0.06em);
+  color: var(--main-button-color);
+  margin-bottom: 4px;
+}
+
+.hero-border {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
+.hero-item {
+  background: var(--main-backgraund-color);
+  list-style: none;
+  width: 100%;
+
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @include desktop {
+    width: calc((100% - 90px) / 4);
+  }
+
+  a {
+    text-decoration: none;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.hero-link:hover {
+  display: block;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+
+  .hero-covertext {
+    transform: translateY(0);
+  }
+}
+
+.hero-coverbox {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-covertext {
+  position: absolute;
+  top: 0;
+  transform: translateY(101%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 63px 24px;
+  height: 100%;
+  @include font(400, 1.56, 18px, 0.03em);
+  color: var(--second-text-color);
+  background: var(--main-cover-color);
+}
+
+.hero-text {
+  @include font(400, 1.88, 16px, 0.03em);
+  color: var(--main-text-color);
+}
+
+.card-image {
+  display: block;
+}

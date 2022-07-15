@@ -1,0 +1,46 @@
+.client-section {
+  background-color: var(--main-backgraund-color);
+}
+
+.client {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  list-style-type: none;
+
+  &__item {
+    height: 92px;
+    width: calc((100% - 30px) / 2);
+
+    @include tablet {
+      width: calc((100% - 60px) / 3);
+    }
+
+    @include desktop {
+      width: calc((100% - 150px) / 6);
+    }
+  }
+
+  // &__item:first-child {
+  //   margin-left: 0;
+  // }
+
+  &__icon {
+    fill: currentColor;
+  }
+}
+
+.client__link {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: var(--main-soc-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border-color: var(--main-focus-color);
+    color: var(--main-focus-color);
+  }
+}

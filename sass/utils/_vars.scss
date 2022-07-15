@@ -1,0 +1,22 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --main-backgraund-color: #ffffff;
+  --main-button-color: #212121;
+  --main-focus-color: #2196f3;
+  --main-text-color: #757575;
+  --second-button-color: #ffffff;
+  --second-text-color: #ffffff;
+  --main-font: 'Roboto', sans-serif;
+  --main-soc-color: #afb1b8;
+  --second-soc-color: #ffffff;
+  --main-cover-color: rgba(33, 150, 243, 0.9);
+}

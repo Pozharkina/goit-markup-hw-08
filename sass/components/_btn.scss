@@ -1,0 +1,12 @@
+.btn {
+  @extend %align-list;
+  @include font(700, 1.88, 16px, 0.06em);
+  justify-content: center;
+  font-family: var(--main-font);
+  color: var(--second-button-color);
+  background: var(--main-focus-color);
+  border: transparent;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
