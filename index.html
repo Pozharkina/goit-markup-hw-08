@@ -13,8 +13,8 @@
   </head>
 
   <body>
-    <!-- <header class="header">
-      <div class="conteiner">
+    <header class="header">
+      <div class="container">
         <nav class="nav">
           <a href="./index.html" class="logo header-logo"
             ><span class="logo__web">Web</span><span class="logo__studio">Studio</span></a
@@ -48,19 +48,76 @@
             >
           </li>
         </ul>
+    
+      
+        <button type="button" class="menu-open-btn"><svg width="40" height="40">
+            <use class="" href="./images/icons.svg#icon-open-menu_btn"></use>
+          </svg></button>
+    
       </div>
-    </header> -->
+
+      <div class="mob-menu is-hidden">
+        <div class="mob-container">   
+          <div class="mob-menu__top">
+            <button type="button" class="close-open-btn"><svg width="40" height="40">
+            <use class="" href="./images/icons.svg#icon-close-menu-btn"></use>
+          </svg></button>
+        <ul class="mob-menu__list">
+            <li class="mob-menu__item">
+              <a href="./index.html" class="mob-menu__link">Студия</a>
+            </li>
+            <li class="mob-menu__item">
+              <a href="./portfolio.html" class="mob-menu__link">Портфолио</a>
+            </li>
+            <li class="mob-menu__item">
+              <a href="" class="mob-menu__link">Контакты</a>
+            </li>
+          </ul>
+            </div>
+
+          <div class="mob-menu__bottom">
+        <ul class="mob-contact">
+          <li class="mob-contact__item tel">
+            <a href="tel:+380991111111" class="mob-contact__link"
+              >+38 099 111 11 11</a
+            >
+          </li>
+          <li class="mob-contact__item mail">
+            <a href="mailto:info@devstudio.com" class="mob-contact__link mob-contact__link--color"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+       <ul class="mob-menu__soc-list">
+        <li class="mob-menu__soc-item"><a href="" 
+        target="_blank"
+        rel="noopener noreferrer nofollow"
+        class="mob-menu__soc-link">Instagram</a></li>
+        <li class="mob-menu__soc-item"><a href="" target="_blank"
+        rel="noopener noreferrer nofollow"
+        class="mob-menu__soc-link">Twitter</a></li>
+        <li class="mob-menu__soc-item"><a href="" target="_blank"
+        rel="noopener noreferrer nofollow"
+        class="mob-menu__soc-link">Facebook</a></li>
+        <li class="mob-menu__soc-item"><a href="" target="_blank"
+        rel="noopener noreferrer nofollow"
+        class="mob-menu__soc-link">LinkedIn</a></li>
+       </ul>
+       </div>
+        </div>
+      </div>
+    </header>
 
     <main class="studio">
       <section class="studio__section">
-        <div class="conteiner">
+        <div class="container">
           <h1 class="studio__title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="studio__button btn" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
       <section class="section inform">
-        <div class="conteiner">
+        <div class="container">
           <h2 class="hidden">Скрытый заголовок</h2>
           <ul class="inform-list">
             <li class="inform-item inform-item--icon-antenna">
@@ -92,38 +149,59 @@
       </section>
 
       <section class="work no-padding section--hidden">
-        <div class="conteiner">
+        <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="work__list">
             <li class="work__item">
               <div class="work__thumb">
-                <a href="./images/work-1.jpg"
-                  ><img
-                    src="images/work-1.jpg"
-                    alt="Набор текста на планшете"
-                    width="370"
-                    height="294"
-                /></a>
+                <a href="./images/work-1.jpg"></a>
+                  <picture>
+                    <source
+                      srcset="./images/work-1.jpg 1x, ./images/work-1-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="images/work-1.jpg"
+                      alt="Набор текста на планшете"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+                </a>
                 <p class="work__text">Десктопные приложения</p>
               </div>
             </li>
             <li class="work__item">
               <div class="work__thumb">
                 <a href="./images/work-2.jpg"
-                  ><img
+                  >
+                  <picture>
+                    <source
+                      srcset="./images/work-2.jpg 1x, ./images/work-2-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <img
                     src="images/work-2.jpg"
                     alt="Разработка нативного приложения"
                     width="370"
-                    height="294"
-                /></a>
+                    height="294"/>
+                  </picture>
+                </a>
                 <p class="work__text">Мобильные приложения</p>
               </div>
             </li>
             <li class="work__item">
               <div class="work__thumb">
                 <a href="./images/work-3.jpg"
-                  ><img src="images/work-3.jpg" alt="Цветовой круг Иттена" width="370" height="294"
-                /></a>
+                  >
+                  <picture>
+                    <source
+                      srcset="./images/work-3.jpg 1x, ./images/work-3-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <img src="images/work-3.jpg" alt="Цветовой круг Иттена" width="370" height="294"/>
+                  </picture>
+                </a>
                 <p class="work__text">Дизайнерские решения</p>
               </div>
             </li>
@@ -132,7 +210,7 @@
       </section>
 
       <section class="section team-section">
-        <div class="conteiner">
+        <div class="container">
           <h2 class="section__title">Наша команда</h2>
           <ul class="team">
             <li class="team-item">
@@ -333,7 +411,7 @@
       </section>
 
       <section class="section client-section">
-        <div class="conteiner">
+        <div class="container">
           <h4 class="section__title">Постоянные клиенты</h4>
           <ul class="client">
             <li class="client__item">
@@ -384,7 +462,7 @@
     </main>
 
     <!-- <footer class="footer">
-      <div class="conteiner">
+      <div class="container">
         <div>
           <a href="index.html" class="logo footer-logo"
             ><span class="logo__web">Web</span><span class="logo__studio studio">Studio</span></a
@@ -521,5 +599,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

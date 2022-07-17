@@ -1,8 +1,12 @@
 .logo {
   text-decoration: none;
-
   font-family: 'Raleway', sans-serif;
-  @include font(700, 1.19, 26px, 0.03em);
+  @include font(700, 1.17, 24px, 0.03em);
+  padding: 16px 0;
+
+  @include desktop {
+    @include font(700, 1.19, 26px, 0.03em);
+  }
 
   &__web {
     color: var(--main-focus-color);
