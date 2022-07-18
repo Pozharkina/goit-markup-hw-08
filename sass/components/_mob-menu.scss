@@ -1,6 +1,5 @@
 .menu-open-btn {
-  display: block;
-  //   margin-left: auto;
+  display: flex;
   padding: 10px 0;
   cursor: pointer;
   border: none;
@@ -58,10 +57,16 @@
 .mob-menu__link {
   font-family: 'Roboto';
   font-style: normal;
-  @include font(500, 1.18, 40px, 0.02em);
+  @include font(500, 1.18, 36px, 0.02em);
   color: #212121;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
+
+  @include mobile {
+    @include font(500, 1.18, 40px, 0.02em);
+    color: #212121;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
   &:hover,
   &:focus {
@@ -81,10 +86,13 @@
   }
 
   &__link {
-    @include font(500, 1.18, 34px, 0.02em);
+    @include font(500, 1.18, 24px, 0.02em);
     font-style: normal;
     color: var(--main-focus-color);
     text-decoration: none;
+    @include mobile {
+      font-size: 34px;
+    }
   }
 
   &__link--color {
@@ -114,9 +122,13 @@
 }
 
 .mob-menu__soc-link {
-  @include font(500, 1.22, 18px, 0.02em);
+  @include font(500, 1.22, 10px, 0.02em);
   text-decoration: none;
   color: var(--main-focus-color);
+
+  @include mobile {
+    font-size: 18px;
+  }
 }
 
 .close-open-btn {

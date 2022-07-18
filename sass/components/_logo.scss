@@ -4,6 +4,10 @@
   @include font(700, 1.17, 24px, 0.03em);
   padding: 16px 0;
 
+  @include tablet {
+    padding: 26px 0;
+  }
+
   @include desktop {
     @include font(700, 1.19, 26px, 0.03em);
   }
