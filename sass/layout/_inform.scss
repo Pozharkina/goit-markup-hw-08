@@ -50,6 +50,12 @@
   text-transform: uppercase;
   color: #212121;
   margin-bottom: 10px;
+  @include mini-mobile {
+    text-align: center;
+  }
+  @include tablet {
+    text-align: start;
+  }
 }
 
 .inform-text {

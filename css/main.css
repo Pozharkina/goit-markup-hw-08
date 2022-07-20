@@ -394,7 +394,7 @@ img {
   border: none;
   background-color: transparent;
   color: var(--main-button-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-open-btn:hover, .menu-open-btn:focus {
   fill: var(--main-focus-color);
@@ -466,6 +466,12 @@ img {
 }
 .mob-menu__link:hover, .mob-menu__link:focus {
   color: var(--main-focus-color);
+}
+.mob-menu__link--current {
+  position: relative;
+  overflow: hidden;
+  color: var(--main-focus-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mob-contact {
@@ -539,7 +545,7 @@ img {
   cursor: pointer;
   border: none;
   background-color: transparent;
-  transition: fill 250ms var(--main-button-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-open-btn:hover, .close-open-btn:focus {
   fill: var(--main-focus-color);
@@ -576,7 +582,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .studio__section {
-    max-width: 1200px;
+    max-width: 1600px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -673,6 +679,16 @@ img {
   text-transform: uppercase;
   color: #212121;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .inform-title {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .inform-title {
+    text-align: start;
+  }
 }
 
 .inform-text {
